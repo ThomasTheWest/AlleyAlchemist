@@ -96,7 +96,7 @@ Material:
     - _DstBlend: 0
     - _DstBlendAlpha: 0
     - _EnvironmentReflections: 1
-    - _Fill: -0.66
+    - _Fill: -0.75
     - _Fresnel_Power: 39.2
     - _GlossMapScale: 0
     - _Glossiness: 0
@@ -113,7 +113,7 @@ Material:
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
     - _Surface: 0
-    - _WobbleX: -0.12
+    - _WobbleX: -0.02
     - _WobbleZ: 0.09
     - _WorkflowMode: 1
     - _ZWrite: 1
