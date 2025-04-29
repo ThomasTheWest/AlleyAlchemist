@@ -7,8 +7,14 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class ac_cauldron : MonoBehaviour
 {
     [Header("Ingredients")]
+    public int moonwater = 0;
+    public int moonlace = 0;
+    public int mandrake = 0;
+    public int heartblossom = 0;
+    public int growsprout = 0;
     public int ivy = 0;
     public int carrot = 0;
+
     private int ingredCount = 0;
 
     [Header("Material")]

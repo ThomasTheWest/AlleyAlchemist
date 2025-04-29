@@ -26,13 +26,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2740774811356694922}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -0, y: 0.23843311, z: 9.409513}
-  m_LocalScale: {x: 100, y: 100, z: 100}
-  m_ConstrainProportionsScale: 0
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 50, y: 50, z: 50}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 7058117637860528768}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!33 &4195381339971501709
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -93,7 +93,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7058117637860528768}
   m_Layer: 0
-  m_Name: Potion - with liquid shader
+  m_Name: potionTemplate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -108,9 +108,9 @@ Transform:
   m_GameObject: {fileID: 3171156211466775507}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.41727734, y: 0.78375244, z: -9.26}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 724103870898182129}
   - {fileID: 3221992197033357227}
@@ -129,7 +129,7 @@ GameObject:
   - component: {fileID: 6460319933991409539}
   - component: {fileID: 7449978616903046045}
   m_Layer: 0
-  m_Name: Bottle.001
+  m_Name: Stopper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -143,13 +143,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8668819477620792929}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -0.000000044636863, y: 1.8590437, z: 9.409513}
-  m_LocalScale: {x: 86.46105, y: 86.46105, z: 65.9788}
-  m_ConstrainProportionsScale: 0
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0.727, z: 0}
+  m_LocalScale: {x: 45, y: 45, z: 34.33969}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 7058117637860528768}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!33 &6460319933991409539
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -227,13 +227,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8974257980117391583}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -0, y: 0.23843311, z: 9.409513}
-  m_LocalScale: {x: 90, y: 90, z: 90}
-  m_ConstrainProportionsScale: 0
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 45, y: 45, z: 45}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 7058117637860528768}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!33 &4477131384758782525
 MeshFilter:
   m_ObjectHideFlags: 0
