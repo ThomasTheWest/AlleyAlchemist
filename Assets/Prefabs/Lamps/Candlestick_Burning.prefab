@@ -94,8 +94,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   flame: {fileID: 8561612998583760826}
   halo: {fileID: 377419051577898458}
-  duration: 10
+  durationInitial: 120
+  durationMult: 1
   finalColor: {r: 1, g: 0.52, b: 0, a: 1}
+  scaleInitial: 0
 --- !u!65 &4332329574465772719
 BoxCollider:
   m_ObjectHideFlags: 0

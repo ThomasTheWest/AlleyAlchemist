@@ -18,14 +18,16 @@ public class Wobble : MonoBehaviour
     float wobbleAmountToAddZ;
     float pulse;
     float time = 0.5f;
-
+    Material mat; 
     // Use this for initialization
     void Start()
     {
         rend = GetComponent<Renderer>();
+        mat = rend.material;
     }
     private void Update()
     {
+        Debug.Log("Wobbling...");
         time += Time.deltaTime;
         // decrease wobble over time
         wobbleAmountToAddX = Mathf.Lerp(wobbleAmountToAddX, 0, Time.deltaTime * (Recovery));
