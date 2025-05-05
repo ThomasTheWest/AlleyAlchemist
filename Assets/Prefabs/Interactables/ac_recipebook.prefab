@@ -227,8 +227,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2611242565059578340}
   - {fileID: 1605522083702004033}
+  - {fileID: 2611242565059578340}
   - {fileID: 9059634889141918513}
   - {fileID: 6826899735401710494}
   - {fileID: 3654168757210975646}
@@ -248,21 +248,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animDuration: 5
   leafIndex: 0
-  pageLeft: {fileID: 2100000, guid: 29271f62dda6a224e87154f71e3dde13, type: 2}
-  pageRight: {fileID: 2100000, guid: fbdcfdfeebb01744bb87c4409fe44179, type: 2}
+  pageLeft: {fileID: 2100000, guid: a7886afe406210445b2c0bf638ed1f3b, type: 2}
+  pageRight: {fileID: 2100000, guid: a5bdd0ab626e02f40b470397d02ddbeb, type: 2}
   pageNextFront: {fileID: 2100000, guid: 3b987f827d0927e49bcbbc3b56333ab6, type: 2}
   pageNextBack: {fileID: 2100000, guid: 0204549fe72426743ac04a408a66410f, type: 2}
   pagePrevFront: {fileID: 2100000, guid: 8d4131459d8a78740815b3ba7fd7640d, type: 2}
   pagePrevBack: {fileID: 2100000, guid: 8a5448c5f4d73f64ea4d23dbdea38b3e, type: 2}
   pageTextures:
-  - {fileID: 2800000, guid: d0841699b6bf4684283711ec5aae4eb6, type: 3}
-  - {fileID: 2800000, guid: ff051f15f1242d443a2ceeca5b454181, type: 3}
-  - {fileID: 2800000, guid: e1ae2de1ca9c3104aadace21c0c0271a, type: 3}
-  - {fileID: 2800000, guid: 90ea604bc57b2c1428883eb03226f830, type: 3}
-  - {fileID: 2800000, guid: 8bebab93bfde56643abf0cb088708d82, type: 3}
-  - {fileID: 2800000, guid: e308ddaa6940bf44fb7ce8c29ae23884, type: 3}
-  - {fileID: 2800000, guid: 7bed176bf6ded7743ac37c6c9e283b56, type: 3}
-  - {fileID: 2800000, guid: d8015d05b70ea7e45bfa678e5d74f903, type: 3}
+  - {fileID: 2800000, guid: a4abbb2bccacc604d96e8fb4dc35a6b1, type: 3}
+  - {fileID: 2800000, guid: 080b9f8cc8414de40b8a9e5f985077f3, type: 3}
+  - {fileID: 2800000, guid: bedd8ba566a793243ace0613cb8549c2, type: 3}
+  - {fileID: 2800000, guid: 870d7945737cdfb41804b2eef2e8d0b2, type: 3}
+  - {fileID: 2800000, guid: 49d005dc63121be4494ca90571c063be, type: 3}
+  - {fileID: 2800000, guid: 2b40fec84382aa442aa04349a7e88a73, type: 3}
+  - {fileID: 2800000, guid: f4a54780bc9fc484bbad7f191abb360a, type: 3}
+  - {fileID: 2800000, guid: 6a60788b8ed553c4994325d17db0bfea, type: 3}
+  - {fileID: 2800000, guid: 4295429427ba1674ea2ec5e65dfc0530, type: 3}
+  - {fileID: 2800000, guid: 509f2de605de8754f8a17eb5f88274e6, type: 3}
   pageNext: {fileID: 5360658408014196919}
   pagePrev: {fileID: 7416926313036218683}
 --- !u!1 &2720492124136060156
@@ -526,8 +528,8 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 145c0287570245a4b894de54ec840353, type: 2}
-  - {fileID: 2100000, guid: 29271f62dda6a224e87154f71e3dde13, type: 2}
-  - {fileID: 2100000, guid: fbdcfdfeebb01744bb87c4409fe44179, type: 2}
+  - {fileID: 2100000, guid: a7886afe406210445b2c0bf638ed1f3b, type: 2}
+  - {fileID: 2100000, guid: a5bdd0ab626e02f40b470397d02ddbeb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

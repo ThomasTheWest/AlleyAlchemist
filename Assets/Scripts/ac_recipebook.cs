@@ -39,7 +39,7 @@ public class ac_recipebook : MonoBehaviour
     void Start()
     {
         leafIndexMax = pageTextures.Length / 2;
-        Debug.Log("Number of leaves in this book is " + leafIndexMax);
+        //Debug.Log("Number of leaves in this book is " + leafIndexMax);
     }
 
     private IEnumerator PageSequence()
