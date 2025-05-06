@@ -14,6 +14,7 @@ public class ac_cauldron : MonoBehaviour
     public int growsprout = 0;
     public int ivy = 0;
     public int carrot = 0;
+    public int witchSalt = 0;
 
     private int ingredCount = 0;
 

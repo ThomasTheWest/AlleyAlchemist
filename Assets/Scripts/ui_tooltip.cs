@@ -10,7 +10,6 @@ public class ui_tooltip : MonoBehaviour
     [SerializeField] private TextMeshProUGUI tooltip;
     [SerializeField] private RawImage bgSmear;
     public string tooltipText;
-    private bool isTouching = false;
 
     [Header("Fade Settings")]
     [SerializeField] private float fadeStartDistance = 0.25f;
@@ -35,21 +34,5 @@ public class ui_tooltip : MonoBehaviour
         currentColor.a = alpha;
         tooltip.color = currentColor;
         bgSmear.color = currentColor;
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.tag == "Player")
-        {
-            isTouching = true;
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.tag == "Player")
-        {
-            isTouching = false;
-        }
     }
 }
