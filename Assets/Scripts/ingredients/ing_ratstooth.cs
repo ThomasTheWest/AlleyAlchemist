@@ -7,7 +7,8 @@ public class ing_ratstooth : MonoBehaviour, IInteractable
     public int code => 0;
     public void Interact()
     {
-        FindObjectOfType<ac_cauldron>().ratstooth += 1;
+        FindObjectOfType<ac_cauldron>().AddIngredient("ratstooth");
+        //FindObjectOfType<ac_cauldron>().ratstooth += 1;
         Destroy(gameObject, 1.0f);
     }
 }

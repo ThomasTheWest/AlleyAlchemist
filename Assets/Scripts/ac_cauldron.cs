@@ -7,16 +7,22 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class ac_cauldron : MonoBehaviour
 {
     [Header("Ingredients")]
-    public int moonwater = 0;
-    public int moonlace = 0;
-    public int mandrake = 0;
-    public int heartblossom = 0;
-    public int growsprout = 0;
-    public int ivy = 0;
-    public int carrot = 0;
-    public int witchSalt = 0;
+    [Header("Ingredients")]
+    public Dictionary<string, int> ingredientCounts = new Dictionary<string, int>();
 
-    private int ingredCount = 0;
+    //public int moonwater = 0;
+    //public int moonlace = 0;
+    //public int mandrake = 0;
+    //public int heartblossom = 0;
+    //public int growsprout = 0;
+    //public int ivy = 0;
+    //public int carrot = 0;
+    //public int witchSalt = 0;
+    //public int ratstooth = 0;
+    //public int impshroom = 0;
+    //public int moonlacebloom = 0; 
+
+    //private int ingredCount = 0;
 
     [Header("Material")]
     [SerializeField] Material green;
@@ -27,25 +33,67 @@ public class ac_cauldron : MonoBehaviour
     void Start()
     {
         renderLiquid = GetComponent<Renderer>();
+        ingredientCounts.Add("moonwater",0);
+        ingredientCounts.Add("mandrake",0);
+        ingredientCounts.Add("moonlace",0);
+        ingredientCounts.Add("heartblossom",0);
+        ingredientCounts.Add("glowsprout",0);
+        ingredientCounts.Add("ivy",0);
+        ingredientCounts.Add("carrot", 0);
+        ingredientCounts.Add("witchSalt", 0);
+        ingredientCounts.Add("ratstooth", 0);
+        ingredientCounts.Add("impshroom", 0);
+        ingredientCounts.Add("ghostwater", 0);
+        ingredientCounts.Add("glimmerleaf flower",0);
+        ingredientCounts.Add("sewer water", 0);
+        ingredientCounts.Add("sage", 0);
+        ingredientCounts.Add("toad spit drop", 0);
+        ingredientCounts.Add("snakeskin", 0);
+        ingredientCounts.Add("hair",0);
+        ingredientCounts.Add("spidersilk",0);
+
     }
     void Update()
     {
-        ingredCount = ivy + carrot;
-
-        if (ingredCount >= 3)
+        // Check recipes
+        foreach (var recipe in FindObjectOfType<RecipeManager>().recipes)
         {
-            if (ivy == 2 & carrot == 1)
+            if (recipe.Matches(ingredientCounts))
             {
-                renderLiquid.material = green;
+                Debug.Log($"Potion Created: {recipe.potionName}");
+                renderLiquid.material.color = recipe.potionColor;
+                return;
             }
-            else
-            {
-                renderLiquid.material = red;
-            }
+        }
+
+        renderLiquid.material = grey; // Default color if no recipe matches
+        //ingredCount = ivy + carrot;
+
+        //if (ingredCount >= 3)
+        //{
+        //    if (ivy == 2 & carrot == 1)
+        //    {
+        //        renderLiquid.material = green;
+        //    }
+        //    else
+        //    {
+        //        renderLiquid.material = red;
+        //    }
+        //}
+        //else
+        //{
+        //    renderLiquid.material = grey;
+        //}
+    }
+    public void AddIngredient(string ingredientName)
+    {
+        if (ingredientCounts.ContainsKey(ingredientName))
+        {
+            ingredientCounts[ingredientName]++;
         }
         else
         {
-            renderLiquid.material = grey;
+            Debug.LogWarning($"Ingredient {ingredientName} is not registered in the cauldron!");
         }
     }
     void OnTriggerEnter(Collider col)
