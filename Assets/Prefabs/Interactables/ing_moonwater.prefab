@@ -118,7 +118,8 @@ GameObject:
   - component: {fileID: 8326782407873752564}
   - component: {fileID: 8966000107277532731}
   - component: {fileID: 7061133135313375355}
-  - component: {fileID: 6602832057599418385}
+  - component: {fileID: 6091883621473961557}
+  - component: {fileID: 9032074240429836716}
   m_Layer: 0
   m_Name: ing_moonwater
   m_TagString: Untagged
@@ -161,9 +162,9 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1.1, y: 1.31, z: 1.1}
   m_Center: {x: 0, y: 0.67, z: 0}
@@ -355,7 +356,7 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
---- !u!114 &6602832057599418385
+--- !u!114 &6091883621473961557
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -367,6 +368,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40150c2e4b3bc624fb0ce753096ad116, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &9032074240429836716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3171156211466775507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 351b468f46bdd004385433608cbbc5ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 60
+  despawn: 1
 --- !u!1 &4121559369177464202
 GameObject:
   m_ObjectHideFlags: 0

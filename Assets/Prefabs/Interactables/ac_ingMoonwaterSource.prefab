@@ -93,6 +93,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7058117637860528768}
   - component: {fileID: 7494612139789558456}
+  - component: {fileID: 1174888336304223015}
   m_Layer: 0
   m_Name: ac_ingMoonwaterSource
   m_TagString: Untagged
@@ -135,6 +136,28 @@ MonoBehaviour:
   ingredient: {fileID: 3171156211466775507, guid: 3b7e4e4e7cfdfe94ebca928e91726177,
     type: 3}
   spawnLocation: {fileID: 1824395557645759692}
+  ingredReady: 1
+--- !u!65 &1174888336304223015
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3171156211466775507}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.86, y: 1, z: 0.86}
+  m_Center: {x: 0, y: 1.13, z: 0}
 --- !u!1 &6098088621193956767
 GameObject:
   m_ObjectHideFlags: 0

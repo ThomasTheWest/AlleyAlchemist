@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8238091705737816214}
   - component: {fileID: 8743359463470857439}
   - component: {fileID: 2186188160136753101}
+  - component: {fileID: 7457860902848157110}
   m_Layer: 0
   m_Name: ing_Growsprout
   m_TagString: Untagged
@@ -311,6 +312,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78221a88f643a44e94833ca0e68512b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7457860902848157110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2457273537969178838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 351b468f46bdd004385433608cbbc5ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 60
+  despawn: 1
 --- !u!1 &4624801310293308877
 GameObject:
   m_ObjectHideFlags: 0
