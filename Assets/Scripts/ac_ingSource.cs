@@ -16,11 +16,6 @@ public class ac_ingSource : MonoBehaviour
         Instantiate(ingredient, spawnLocationPos, Quaternion.identity);
     }
 
-    private void Update()
-    {
-        Debug.Log("is ready? " + ingredReady);
-    }
-
     private IEnumerator RespawnIngred()
     {
         yield return new WaitForSeconds(1);
@@ -30,7 +25,7 @@ public class ac_ingSource : MonoBehaviour
     }
     void OnTriggerExit(Collider col)
     {
-        Debug.Log("Object removed!");
+        //Debug.Log("Object removed!");
 
         if (ingredReady)
         {

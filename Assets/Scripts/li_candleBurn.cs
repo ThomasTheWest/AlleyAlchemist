@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class li_candle : MonoBehaviour
+public class li_candleBurn : MonoBehaviour
 {
     //this script should go on the scale point for the candle prefab. note the candle meshes that come w the asset pack need to be edited first
     [Header("Components")]
