@@ -64,7 +64,7 @@ public class ac_recipebook : MonoBehaviour
         pagePrevFront.mainTexture = pageTextures[pagePrevFrontIndex];
         pagePrevBack.mainTexture = pageTextures[pagePrevBackIndex];
 
-        Debug.Log("Current leaf: " + leafIndex);
+        //Debug.Log("Current leaf: " + leafIndex);
     }
     private IEnumerator TurnPageForward()
     {
@@ -184,7 +184,7 @@ public class ac_recipebook : MonoBehaviour
         if (leafIndex < leafIndexMax && !isTurning)
         {
             StartCoroutine(TurnPageForward());
-            Debug.Log("Turning forward...");
+            //Debug.Log("Turning forward...");
         }
         else
         {
@@ -197,7 +197,7 @@ public class ac_recipebook : MonoBehaviour
         if (leafIndex > 1 && !isTurning)
         {
             StartCoroutine(TurnPageBackward());
-            Debug.Log("Turning backward...");
+            //Debug.Log("Turning backward...");
         }
         else
         {

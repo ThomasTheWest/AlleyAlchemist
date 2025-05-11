@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class PotionRecipe : MonoBehaviour
+public class PotionRecipe
 {
     public string potionName;
     public Dictionary<string, int> ingredients; // Ingredient name (string) and required quantity (int)

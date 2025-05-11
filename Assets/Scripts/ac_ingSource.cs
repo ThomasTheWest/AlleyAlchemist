@@ -6,20 +6,40 @@ public class ac_ingSource : MonoBehaviour
 {
     public GameObject ingredient;
     public Transform spawnLocation;
+    public bool CustomOrientation = false;
     private Vector3 spawnLocationPos;
+    private Quaternion spawnLocationRot;
     [HideInInspector] public bool ingredReady = true;
 
     private void Start()
     {
         spawnLocationPos = spawnLocation.position;
+        spawnLocationRot = spawnLocation.rotation;
 
-        Instantiate(ingredient, spawnLocationPos, Quaternion.identity);
+        if (CustomOrientation)
+        {
+            Instantiate(ingredient, spawnLocationPos, spawnLocationRot);
+        }
+        else
+        {
+            Instantiate(ingredient, spawnLocationPos, Quaternion.identity);
+        }
+        
     }
 
     private IEnumerator RespawnIngred()
     {
         yield return new WaitForSeconds(1);
-        Instantiate(ingredient, spawnLocationPos, Quaternion.identity);
+
+        if (CustomOrientation)
+        {
+            Instantiate(ingredient, spawnLocationPos, spawnLocationRot);
+        }
+        else
+        {
+            Instantiate(ingredient, spawnLocationPos, Quaternion.identity);
+        }
+
         ingredReady = true;
         yield return null;
     }
