@@ -29,10 +29,15 @@ public class ac_cauldron : MonoBehaviour
     [SerializeField] Material red;
     [SerializeField] Material grey;
     private Renderer renderLiquid;
+    private RecipeManager recipeManager;
 
     void Start()
     {
         renderLiquid = GetComponent<Renderer>();
+        if (renderLiquid == null) Debug.LogError("Renderer not found!");
+
+        recipeManager = FindObjectOfType<RecipeManager>();
+        if (recipeManager == null) Debug.LogError("RecipeManager not found!");
         ingredientCounts.Add("moonwater",0);
         ingredientCounts.Add("mandrake",0);
         ingredientCounts.Add("moonlace",0);
@@ -56,14 +61,24 @@ public class ac_cauldron : MonoBehaviour
     void Update()
     {
         // Check recipes
-        foreach (var recipe in FindObjectOfType<RecipeManager>().recipes)
+        if (recipeManager == null) return;
+
+        foreach (var recipe in recipeManager.recipes)
         {
-            if (recipe.Matches(ingredientCounts))
+            if (recipe != null && recipe.Matches(ingredientCounts))
             {
                 Debug.Log($"Potion Created: {recipe.potionName}");
-                renderLiquid.material.color = recipe.potionColor;
+                if (renderLiquid != null && renderLiquid.material != null)
+                {
+                    renderLiquid.material.color = recipe.potionColor;
+                }
                 return;
             }
+        }
+
+        if (renderLiquid != null && renderLiquid.material != null)
+        {
+            renderLiquid.material.color = Color.grey; // Default color
         }
 
         renderLiquid.material = grey; // Default color if no recipe matches
@@ -99,7 +114,7 @@ public class ac_cauldron : MonoBehaviour
     void OnTriggerEnter(Collider col)
     {
         IInteractable interactable = col.GetComponent<IInteractable>();
-        if (interactable != null & interactable.code == 0)
+        if (interactable != null && interactable.code == 0)
         {
             //add sound code here wen we gots sounds
             interactable.Interact();

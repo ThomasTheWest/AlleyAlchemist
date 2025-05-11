@@ -8,7 +8,7 @@ public class RecipeManager : MonoBehaviour
 
     void Start()
     {
-        // Example: Adding a recipe for a healing potion
+       
         recipes.Add(new PotionRecipe("Love potion", new Dictionary<string, int>
         {
             { "heartblossom", 3 },
