@@ -1,12 +1,16 @@
 --Developers--
-- Amo Ferreira
-- Samantha Go
-- Kara Loaiza 
-- Rey Ramirez
+- Amo Ferreira | Graphic Design, Texture Art
+- Samantha Go | Programming, Shader Config
+- Kara Loaiza | Narrative Lead
+- Rey Ramirez | VFX, 3D Art
 - Thomas West​ | Programming, Technical Art
 
 
 --3rd party assets--
+Sound
+- f4ngy | Picking Flower
+https://freesound.org/people/f4ngy/sounds/240784/
+
 3D
 - Broken Vector | Ultimate Low Poly Dungeon: 
 https://assetstore.unity.com/packages/3d/environments/dungeons/ultimate-low-poly-dungeon-143535
