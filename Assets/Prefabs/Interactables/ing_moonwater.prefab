@@ -744,6 +744,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tooltip
       objectReference: {fileID: 0}
+    - target: {fileID: 1473921349792843328, guid: 968a5b67ad1fbb745a0902ccdeca42f0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2881107413425727032, guid: 968a5b67ad1fbb745a0902ccdeca42f0,
         type: 3}
       propertyPath: tooltipText

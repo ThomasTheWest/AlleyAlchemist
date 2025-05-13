@@ -1,8 +1,8 @@
 --Developers--
-- Amo Ferreira | Graphic Design, Texture Art
-- Samantha Go | Programming, Shaders
-- Kara Loaiza | Writing Lead
-- Rey Ramirez | VFX, 3D Art
+- Amo Ferreira | 
+- Samantha Go | Programming, 3D modeling, Design
+- Kara Loaiza | Narrative Design, Writing
+- Rey Ramirez | 
 - Thomas West​ | Programming
 
 
