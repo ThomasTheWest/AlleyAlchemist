@@ -27,7 +27,7 @@ public class Wobble : MonoBehaviour
     }
     private void Update()
     {
-        Debug.Log("Wobbling...");
+        //Debug.Log("Wobbling...");
         time += Time.deltaTime;
         // decrease wobble over time
         wobbleAmountToAddX = Mathf.Lerp(wobbleAmountToAddX, 0, Time.deltaTime * (Recovery));
