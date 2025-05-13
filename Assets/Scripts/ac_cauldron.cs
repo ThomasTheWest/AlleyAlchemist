@@ -30,7 +30,8 @@ public class ac_cauldron : MonoBehaviour
     [SerializeField] Material grey;
     private Renderer renderLiquid;
     private RecipeManager recipeManager;
-
+    public AudioSource audioSource; 
+    public AudioClip cauldronbubble; 
     void Start()
     {
         renderLiquid = GetComponent<Renderer>();
@@ -112,7 +113,13 @@ public class ac_cauldron : MonoBehaviour
         }
     }
 
-   
+    private void PlayCauldronBubble()
+    {
+        if (audioSource != null && cauldronbubble != null)
+        {
+            audioSource.PlayOneShot(cauldronbubble);  // Play the sound once
+        }
+    }
     void OnTriggerEnter(Collider col)
     {
        
@@ -122,6 +129,8 @@ public class ac_cauldron : MonoBehaviour
         {
             //add sound code here wen we gots sounds
             interactable.Interact();
+            PlayCauldronBubble();
+            
         }
         //need an elseif that makes the item bounce off if it isn't an ingredient
     }
