@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7181619497333619544}
   - component: {fileID: 4959321155489597788}
   m_Layer: 0
-  m_Name: drop4
+  m_Name: ing_ghostWaterDrop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

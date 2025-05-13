@@ -118,8 +118,8 @@ GameObject:
   - component: {fileID: 8326782407873752564}
   - component: {fileID: 8966000107277532731}
   - component: {fileID: 7061133135313375355}
-  - component: {fileID: 6091883621473961557}
   - component: {fileID: 9032074240429836716}
+  - component: {fileID: 130731277453174091}
   m_Layer: 0
   m_Name: ing_moonwater
   m_TagString: Untagged
@@ -356,18 +356,6 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
---- !u!114 &6091883621473961557
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3171156211466775507}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40150c2e4b3bc624fb0ce753096ad116, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &9032074240429836716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -382,6 +370,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   duration: 60
   despawn: 1
+--- !u!114 &130731277453174091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3171156211466775507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 253ca9b337d65bc48bd7e1fe555383c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredientPrefab: {fileID: 338357024789471235, guid: 932914bbae279c349976cc81c23b2e55,
+    type: 3}
+  pourPoint: {fileID: 3188358316128748382, guid: 7eb15c6b1896fad41b426d5b824ddb7d,
+    type: 3}
+  pourForce: 5
+  tiltThreshold: 70
+  pourAudioSource: {fileID: 1030100610410414999, guid: 7eb15c6b1896fad41b426d5b824ddb7d,
+    type: 3}
+  pourSound: {fileID: 8300000, guid: 976e2c1ac624cb345a00d2b9773b9516, type: 3}
 --- !u!1 &4121559369177464202
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,9 +1,9 @@
 --Developers--
 - Amo Ferreira | Graphic Design, Texture Art
-- Samantha Go | Programming, Shader Config
+- Samantha Go | Programming, Shaders
 - Kara Loaiza | Writing Lead
 - Rey Ramirez | VFX, 3D Art
-- Thomas West​ | Programming, Technical Art
+- Thomas West​ | Programming
 
 
 --3rd party assets--
@@ -12,6 +12,10 @@ Sound
 https://freesound.org/people/f4ngy/sounds/240784/
 - Millavsb | two drops
 https://pixabay.com/sound-effects/two-drops-87977/
+- Demo | Bird Chirping Sound Effect
+https://www.youtube.com/watch?v=6wqcni74cM4
+- Audio Wind | Wind In Trees Sound Effect No Copyright
+https://www.youtube.com/watch?v=NE79jGx9wHE 
 
 3D
 - Broken Vector | Ultimate Low Poly Dungeon: 

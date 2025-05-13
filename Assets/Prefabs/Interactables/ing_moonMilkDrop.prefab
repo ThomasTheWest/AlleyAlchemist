@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 6435097889825585661}
   - component: {fileID: 3603203015315688034}
   - component: {fileID: 7790735642241591333}
-  - component: {fileID: -1776897665165911346}
-  - component: {fileID: 3062332345271858533}
+  - component: {fileID: 4046988838558355004}
+  - component: {fileID: -9043914413936244709}
   m_Layer: 0
-  m_Name: drop2
+  m_Name: ing_moonMilkDrop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -64,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5db36620d08d940499f2592c240268fe, type: 2}
+  - {fileID: 2100000, guid: f8b53905902efa7449b55a2527b2b880, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -107,7 +107,7 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &-1776897665165911346
+--- !u!114 &4046988838558355004
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -116,10 +116,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 338357024789471235}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a4c3a046ac052f48865f1437e910a41, type: 3}
+  m_Script: {fileID: 11500000, guid: 40150c2e4b3bc624fb0ce753096ad116, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!54 &3062332345271858533
+--- !u!54 &-9043914413936244709
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
