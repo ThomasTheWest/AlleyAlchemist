@@ -7,8 +7,10 @@ public class ac_ingSource : MonoBehaviour
     public GameObject ingredient;
     public Transform spawnLocation;
     public bool CustomOrientation = false;
+    public bool SoundEnabled = false;
     private Vector3 spawnLocationPos;
     private Quaternion spawnLocationRot;
+    private AudioSource audioSource;
     [HideInInspector] public bool ingredReady = true;
 
     private void Start()
@@ -24,7 +26,11 @@ public class ac_ingSource : MonoBehaviour
         {
             Instantiate(ingredient, spawnLocationPos, Quaternion.identity);
         }
-        
+
+        if (SoundEnabled)
+        {
+            audioSource = GetComponent<AudioSource>();
+        }
     }
 
     private IEnumerator RespawnIngred()
@@ -46,6 +52,12 @@ public class ac_ingSource : MonoBehaviour
     void OnTriggerExit(Collider col)
     {
         //Debug.Log("Object removed!");
+
+        if (SoundEnabled && audioSource != null)
+        {
+            audioSource.Play();
+            //Debug.Log("playing sound!!!!!!");
+        }
 
         if (ingredReady)
         {
