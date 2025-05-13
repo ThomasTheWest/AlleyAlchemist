@@ -122,7 +122,7 @@ GameObject:
   - component: {fileID: 130731277453174091}
   - component: {fileID: 3557954333276760152}
   m_Layer: 0
-  m_Name: ing_moonwater
+  m_Name: ing_sewerWater
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -384,7 +384,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 253ca9b337d65bc48bd7e1fe555383c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredientPrefab: {fileID: 338357024789471235, guid: 932914bbae279c349976cc81c23b2e55,
+  ingredientPrefab: {fileID: 338357024789471235, guid: 16c65a1c7fa334a47ab4bafedde860a4,
     type: 3}
   pourPoint: {fileID: 6640348928252232416}
   pourForce: 5
@@ -694,7 +694,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5d749d87154b3774b8fa422e5b0aa714, type: 2}
+  - {fileID: 2100000, guid: f0235f9394a482744b69014020da456e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -747,7 +747,7 @@ PrefabInstance:
     - target: {fileID: 2881107413425727032, guid: 968a5b67ad1fbb745a0902ccdeca42f0,
         type: 3}
       propertyPath: tooltipText
-      value: Moonwater
+      value: Sewer water
       objectReference: {fileID: 0}
     - target: {fileID: 5009994513726039366, guid: 968a5b67ad1fbb745a0902ccdeca42f0,
         type: 3}
