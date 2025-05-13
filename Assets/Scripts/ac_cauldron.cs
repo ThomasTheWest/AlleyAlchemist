@@ -111,18 +111,26 @@ public class ac_cauldron : MonoBehaviour
             Debug.LogWarning($"Ingredient {ingredientName} is not registered in the cauldron!");
         }
     }
+
     // Handle liquid particle collisions
-    void OnParticleCollision(GameObject other)
-    {
-        // Check if the particle belongs to a pouring bottle
-        potionPour bottle = other.GetComponentInParent<potionPour>();
-        if (bottle != null && bottle.IsPouring())
-        {
-            AddIngredient(bottle.GetIngredientName());
-        }
-    }
+    //void OnParticleCollision(GameObject other)
+    //{
+    //    // Check if the particle belongs to a pouring bottle
+    //    potionPour bottle = other.GetComponentInParent<potionPour>();
+    //    if (bottle != null && bottle.IsPouring())
+    //    {
+    //        AddIngredient(bottle.GetIngredientName());
+    //    }
+    //}
     void OnTriggerEnter(Collider col)
     {
+       
+        //potionPour bottle = col.GetComponentInParent<potionPour>();
+        //if (bottle != null && bottle.IsPouring())
+        //{
+        //    AddIngredient(bottle.GetIngredientName());
+        //    Debug.Log($"Added ingredient: {bottle.GetIngredientName()}");
+        //}
         IInteractable interactable = col.GetComponent<IInteractable>();
         if (interactable != null && interactable.code == 0)
         {
