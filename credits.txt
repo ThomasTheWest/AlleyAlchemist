@@ -1,7 +1,7 @@
 --Developers--
 - Amo Ferreira | Graphic Design, Texture Art
 - Samantha Go | Programming, Shader Config
-- Kara Loaiza | Narrative Lead
+- Kara Loaiza | Writing Lead
 - Rey Ramirez | VFX, 3D Art
 - Thomas West​ | Programming, Technical Art
 
@@ -10,6 +10,8 @@
 Sound
 - f4ngy | Picking Flower
 https://freesound.org/people/f4ngy/sounds/240784/
+- Millavsb | two drops
+https://pixabay.com/sound-effects/two-drops-87977/
 
 3D
 - Broken Vector | Ultimate Low Poly Dungeon: 
